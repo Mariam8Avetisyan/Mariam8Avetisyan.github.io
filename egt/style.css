@@ -1,0 +1,249 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+html, body {
+    position: relative;
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+#logo{
+    position: absolute;
+    top: -30.9px;
+    width: 100%;
+    height: calc(100% + 60px);
+    border-radius: 29.4px;
+    background-color: #2e0045;
+    transform: scale(1);
+    animation-name: logo;
+}
+#go {
+    margin: 0 9px;
+    position: absolute;
+    top: 50px;
+    width: 80px;
+    height: 50px;
+    border-radius: 30px;
+    animation-name: go;
+    transform-origin: 25% 50%;
+}
+#od {
+    clip: rect(0px,80px,28px,0px);
+    animation-name: od;
+}
+#win {
+    position: absolute;
+    width: 64px;
+    height: 100%;
+    right: -68px;
+    top: -4px;
+    clip: rect(0px,80px,30px,0px);
+    animation-name: win;
+}
+#go img {
+    position: absolute;
+    width: 100%;
+}
+#main {
+    position: absolute;
+    left: 32px;
+    top: 44px;
+}
+#exc {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    transform-origin: 100% 0;
+    animation-name: button;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+}
+#amus {
+    position: absolute;
+    left: 39px;
+    top: 186px;
+    animation-name: popup;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+}
+#x {
+    position: absolute;
+    left: 151px;
+    top: 191px;
+    animation-name: x;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#gw {
+    position: absolute;
+    left: 180px;
+    top: 185px;
+    animation-name: popup;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+}
+#on {
+    position: absolute;
+    left: 32px;
+    top: 44px;
+    animation-duration: .35s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-name: on;
+}
+#button {
+    position: absolute;
+    left: 123.5px;
+    top: 276px;
+    width: 100px;
+    animation-name: button;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+}
+#back {
+    width: 100%;
+    height: 100%;
+}
+
+.anim{
+    animation-duration: 6s;
+    animation-iteration-count:infinite;
+    animation-timing-function: cubic-bezier(0.6, 0, 0, 1);
+    animation-direction:alternate;
+}
+
+@keyframes logo {
+    15% {
+        width: 100%;
+        height: calc(100% + 60px);
+        left: 0px;
+        animation-timing-function: cubic-bezier(0.6, 0, 0.35, 1);
+        transform: scale(1);
+        top: -30.9px;
+    }
+    35% {
+        width: 58.8px;
+        height: 102.2px;
+        left: 15px;
+        top: -40.9px;
+        transform: scale(0.7);
+    }
+    50% {
+        width: 58.8px;
+        height: 102.2px;
+        left: 15px;
+        top: -40.9px;
+        transform: scale(0.7);
+    }
+    100% {
+        width: 58.8px;
+        height: 102.2px;
+        left: 15px;
+        top: -40.9px;
+        transform: scale(0.7);
+    }
+}
+@keyframes go {
+    0% {
+        left: calc(50% - 50px);
+        top: calc(50% - 15px);
+    }
+    15% {
+        left: calc(50% - 80px);
+        top: calc(50% - 15px);
+        animation-timing-function: cubic-bezier(0.6, 0, 0.35, 1);
+    }
+    35% {
+        left: 0%;
+        top: 50px;
+        transform: scale(1); 
+        }
+    51.25% {
+        transform: scale(1.2); 
+        }
+    67.5% {
+        transform: scale(1); 
+        }
+    83.75% {
+        transform: scale(1.2); 
+        }
+    100% {
+        transform: scale(1); 
+        }
+}
+@keyframes od {
+    15% {
+        clip: rect(0px,80px,28px,0px);
+    }
+    35% {
+        clip: rect(0px,0px,28px,0px);
+        
+    }
+    50% {
+        clip: rect(0px,0px,28px,0px);
+    }
+    100% {
+        clip: rect(0px,0px,28px,0px);
+    }
+}
+@keyframes win {
+    0% {
+        right: 0px;
+        clip: rect(0px,80px,30px,65px);
+    }
+    15% {
+        right: -68px;
+        clip: rect(0px,80px,30px,0px);
+        animation-timing-function: cubic-bezier(0.69, 0, 1, 0.66);
+    }
+    23% {
+        right: 60px;
+        clip: rect(0px,80px,30px,65px);
+    }
+    50% {
+        right: 60px;
+        clip: rect(0px,80px,30px,65px);
+    }
+    100% {
+        right: 60px;
+        clip: rect(0px,80px,30px,65px);
+    }
+}
+@keyframes button {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+@keyframes on {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes x {
+    0% {
+        transform: rotate(-20deg);
+    }
+    48% {
+        transform: rotate(20deg);
+    }
+    52% {
+        transform: rotate(340deg);
+    }
+    100% {
+        transform: rotate(380deg);
+    }
+}
