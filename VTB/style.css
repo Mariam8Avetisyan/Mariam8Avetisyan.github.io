@@ -1,0 +1,363 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+#slide1{
+    -webkit-border: none;
+    -moz-border: none;
+    -ms-border: none;
+    -o-border: none;
+    position: relative;
+	overflow: hidden;
+    max-width: 1900px;
+    min-width: 300px;
+    height: 100px;
+    background : -moz-linear-gradient(0deg, rgba(0, 170, 255, 1) 0%,rgba(0, 40, 130, 1) 100%);
+    background : -webkit-linear-gradient(0deg, rgba(0, 170, 255, 1) 0%, rgba(0, 40, 130, 1) 100%);
+    background : -o-linear-gradient(0deg, rgba(0, 170, 255, 1) 0%, rgba(0, 40, 130, 1) 100%);
+    background : -ms-linear-gradient(0deg, rgba(0, 170, 255, 1) 0%, rgba(0, 40, 130, 1) 100%);
+    animation-name: slide1;
+    -webkit-animation-name: slide1;
+    -moz-animation-name: slide1;
+    -ms-animation-name: slide1;
+    -o-animation-name: slide1;
+}
+#logo {
+    position: absolute;
+    top: 25px;
+    right: 2.7%;
+    width: 150px;
+}
+#info {
+    position: absolute;
+    left: 45%;
+}
+#avtovark {
+    position: absolute;
+    left: 0px;
+    top: 12px;
+    width: 420px;
+    animation-name: avtovark;
+}
+#avtovark2 {
+    position: absolute;
+    left: 0px;
+    top: 8px;
+    width: 250px;
+    opacity: 0;
+    animation-name: avtovark;
+}
+#gic1 {
+    position: absolute;
+    opacity: 1;
+}
+#gic2 {
+    position: absolute;
+    opacity: 0;
+}
+#avtovarkd {
+    position: absolute;
+    left: -140px;
+    top: 26px;
+    width: 430px;
+    height: 50px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0);
+}
+#gicd {
+    position: absolute;
+    left: -140px;
+    top: 31px;
+    width: 450px;
+    height: 75px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0);
+    animation-name: gicd;
+    animation-timing-function: cubic-bezier(0.1, 0.01, 0, 1.01);
+}
+#lower {
+    position: absolute;
+    top: 77px;
+    left: 25px;
+    transform: rotate(-20deg);
+    width: 266px;
+    animation-name: lower;
+}
+#lowerd {
+    position: absolute;
+    top: -40px;
+    left: 290px;
+    transform: rotate(20deg);
+    width: 300px;
+    height: 285px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0);
+}
+#text {
+    position: absolute;
+    left: 8px;
+    top: 159px;
+    width: 105px;
+    animation-name: text;
+    animation-timing-function: linear;
+}
+#tak {
+    position: absolute;
+    left: 1%;
+    top: 17px;
+    width: 300px;
+    animation-name: tak;
+}
+img {
+    position: absolute;
+}
+.tund, .tun {
+    position: absolute;
+}
+#tund {
+    left: 23%;
+    transform: scale(0.8);
+    top: -5px;
+}
+#shoxq {
+    left: -30px;
+    top: 30px;
+    animation-name: first;
+}
+#canc {
+    top: 50px;
+    left: 0px;
+    transform: scale(1.1);
+    animation-name: first;
+}
+#pol {
+    animation-name: first;
+    opacity: 0;
+}
+#pat {
+    animation-name: pat;
+    opacity: 0;
+}
+#mutq {
+    animation-name: mutq;
+    opacity: 0;
+}
+#garaj {
+    animation-name: garaj;
+    opacity: 0;
+}
+#drner {
+    animation-name: drner;
+    opacity: 0;
+}
+#krish {
+    animation-name: krish;
+    opacity: 0;
+}
+#tun {
+    animation-name: tun;
+    opacity: 0;
+}
+#luys {
+    animation-name: luys;
+    opacity: 0;
+}
+
+.anim{
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(.29,0,0,1);
+}
+
+
+@keyframes gicd {
+    0% {width: 0px;}
+    6% {width: 450px;}
+}
+@keyframes lower {
+    0% {top: 183px; left: -265px;}
+    7% {top: 183px; left: -265px;}
+    17% {top: 77px; left: 25px;}
+}
+@keyframes first {
+    0% {opacity: 0;}
+    0% {opacity: 0;}
+    15% {opacity: 1;}
+    100% {opacity: 1;}
+}
+@keyframes pat {
+    0% {opacity: 0;}
+    10% {opacity: 0;}
+    25% {opacity: 1;}
+    100% {opacity: 1;}
+}
+@keyframes mutq {
+    0% {opacity: 0;}
+    20% {opacity: 0;}
+    35% {opacity: 1;}
+    100% {opacity: 1;}
+}
+@keyframes garaj {
+    0% {opacity: 0;}
+    30% {opacity: 0;}
+    45% {opacity: 1;}
+    100% {opacity: 1;}
+}
+@keyframes drner {
+    0% {opacity: 0;}
+    40% {opacity: 0;}
+    55% {opacity: 1;}
+    100% {opacity: 1;}
+}
+@keyframes krish {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    65% {opacity: 1;}
+    100% {opacity: 1;}
+}
+@keyframes tun {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    65% {opacity: 1;}
+    100% {opacity: 1;}
+}
+@keyframes luys {
+    0% {opacity: 0;}
+    60% {opacity: 0;}
+    75% {opacity: 1;}
+    100% {opacity: 1;}
+}
+@media only screen and (max-width: 1550px) {
+    #slide1 {
+        background : -moz-linear-gradient(0deg, rgba(0, 170, 255, 1) -12%,rgba(0, 40, 130, 1) 100%);
+        background : -webkit-linear-gradient(0deg, rgba(0, 170, 255, 1) -12%, rgba(0, 40, 130, 1) 100%);
+        background : -o-linear-gradient(0deg, rgba(0, 170, 255, 1) -12%, rgba(0, 40, 130, 1) 100%);
+        background : -ms-linear-gradient(0deg, rgba(0, 170, 255, 1) -12%, rgba(0, 40, 130, 1) 100%);
+    }
+    #logo {
+        top: 30px;
+        right: 2%;
+        width: 100px;
+    }
+    #info {
+        position: absolute;
+        left: 50%;
+        top: 15px;
+        transform: scale(0.7);
+    }
+    #lowerd {
+        left: 291px;
+    }
+    #tund {
+        left: 27%;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    #slide1 {
+        background : -moz-linear-gradient(0deg, rgba(0, 170, 255, 1) -25%,rgba(0, 40, 130, 1) 100%);
+        background : -webkit-linear-gradient(0deg, rgba(0, 170, 255, 1) -25%, rgba(0, 40, 130, 1) 100%);
+        background : -o-linear-gradient(0deg, rgba(0, 170, 255, 1) -25%, rgba(0, 40, 130, 1) 100%);
+        background : -ms-linear-gradient(0deg, rgba(0, 170, 255, 1) -25%, rgba(0, 40, 130, 1) 100%);
+    }
+    #avtovark2, #gic2 {
+        opacity: 1;
+    }
+    #avtovark, #gic1 {
+        opacity: 0;
+    }
+    #avtovarkd {
+        height: 70px;
+        top: 15px;
+    }
+    #gicd {
+        top: 15px;
+    }
+    #lowerd {
+        top: -30px;
+        left: 135px;
+        width: 330px;
+    }
+    #lower {
+        width: 300px;
+        left: 10px;
+    }
+    #tak {
+        position: absolute;
+        left: 1%;
+        top: 45px;
+        width: 200px;
+        animation-name: tak;
+    }
+    #tund {
+        left: 22%;
+    }
+    @keyframes lower {
+        0% {top: 193px; left: -300px;}
+        7% {top: 193px; left: -300px;}
+        17% {top: 77px; left: 10px;}
+    }
+    @keyframes gicd {
+        0% {width: 0px;}
+        6% {width: 300px;}
+    }
+    @keyframes avtovark {
+        0% {top: 80px;}
+        3% {top: 80px;}
+        13% {top: 8px;}
+    }
+@media only screen and (max-width: 900px) {
+    #info {
+        position: absolute;
+        left: calc(48% + 25px);
+        top: -5px;
+    }
+    #lowerd {
+        left: 0px;
+        top: 88px;
+        transform: rotate(0deg);
+    }
+    #lower {
+        top: 15px;
+        left: 0px;
+        transform: rotate(0deg);
+    }
+    #gicd {
+        left: 0px;
+    }
+    #avtovarkd {
+        left: 0px;
+    }
+    #tund {
+        left: 28%;
+        transform: scale(0.8);
+    }
+    @keyframes lower {
+        0% {top: -40px; left: 0px;}
+        9% {top: -40px; left: 0px;}
+        19% {top: 15px; left: 0px;}
+    }
+}
+@media only screen and (max-width: 700px) {
+    #logo {
+        top: 10px;
+        right: 1%;
+        width: 70px;
+    }
+    #info {
+        position: absolute;
+        left: 1%;
+        top: 0px;
+        transform: scale(0.4);
+    }
+    #tak {
+        position: absolute;
+        left: 1%;
+        top: 60px;
+        width: 150px;
+        animation-name: tak;
+    }
+    #tund {
+        left: 46%;
+    }
+}
+}
