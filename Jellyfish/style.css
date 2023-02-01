@@ -1,0 +1,329 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body {
+    position: relative;
+    width: 300px;
+    height: 250px;
+}
+#box{
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+}
+img {
+    -webkit-border: none;
+    -moz-border: none;
+    -ms-border: none;
+    -o-border: none;
+    position: absolute;
+    left: -180px;
+    top: -150px;
+}
+#img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: scale(.83);
+    animation-name: img;
+    -webkit-animation-name: img;
+    -moz-animation-name: img;
+    -ms-animation-name: img;
+    -o-animation-name: img;
+}
+#img2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: scale(.83);
+    opacity: 0;
+    animation-name: img2;
+    -webkit-animation-name: img2;
+    -moz-animation-name: img2;
+    -ms-animation-name: img2;
+    -o-animation-name: img2;
+}
+.imgcontainer {
+    position: absolute;
+    -webkit-border: none;
+    -moz-border: none;
+    -ms-border: none;
+    -o-border: none;
+}
+.slogan {
+    width: 150px;
+    left: 75px;
+    top: 20px;
+}
+#slogan {
+    opacity: .3;
+    clip: rect(0px,0px,200px,0px);
+    animation-name: slogan;
+    -webkit-animation-name: slogan;
+    -moz-animation-name: slogan;
+    -ms-animation-name: slogan;
+    -o-animation-name: slogan;
+}
+#slogan1 {
+    opacity: .3;
+    clip: rect(0px,0px,200px,0px);
+    animation-name: slogan1;
+    -webkit-animation-name: slogan1;
+    -moz-animation-name: slogan1;
+    -ms-animation-name: slogan1;
+    -o-animation-name: slogan1;
+}
+#slogan2 {
+    opacity: .3;
+    clip: rect(0px,0px,200px,0px);
+    animation-name: slogan2;
+    -webkit-animation-name: slogan2;
+    -moz-animation-name: slogan2;
+    -ms-animation-name: slogan2;
+    -o-animation-name: slogan2;
+}
+#slogan3 {
+    opacity: 1;
+    clip: rect(0px,0px,200px,0px);
+    animation-name: slogan3;
+    -webkit-animation-name: slogan3;
+    -moz-animation-name: slogan3;
+    -ms-animation-name: slogan3;
+    -o-animation-name: slogan3;
+}
+
+#logo {
+    width: 80px;
+    left: 110px;
+    bottom: 23px;
+    opacity: 0;
+    animation-name: logo;
+    -webkit-animation-name: logo;
+    -moz-animation-name: logo;
+    -ms-animation-name: logo;
+    -o-animation-name: logo;
+}
+#tropical {
+    width: 80px;
+    left: 110px;
+    bottom: 13px;
+    opacity: 0;
+    animation-name: logo;
+    -webkit-animation-name: logo;
+    -moz-animation-name: logo;
+    -ms-animation-name: logo;
+    -o-animation-name: logo;
+}
+.anim{
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes logo{
+    5%{opacity: 0;}
+    15%{opacity: 1;}
+    85%{opacity: 1;}
+    95%{opacity: 0;}
+}
+@-webkit-keyframes logo{
+    5%{opacity: 0;}
+    15%{opacity: 1;}
+    85%{opacity: 1;}
+    95%{opacity: 0;}
+}
+@-moz-keyframes logo{
+    5%{opacity: 0;}
+    15%{opacity: 1;}
+    85%{opacity: 1;}
+    95%{opacity: 0;}
+}
+@-ms-keyframes logo{
+    5%{opacity: 0;}
+    15%{opacity: 1;}
+    85%{opacity: 1;}
+    95%{opacity: 0;}
+}
+@-o-keyframes logo{
+    5%{opacity: 0;}
+    15%{opacity: 1;}
+    85%{opacity: 1;}
+    95%{opacity: 0;}
+}
+
+@keyframes img {
+    0% {transform: scale(1);}
+    100% {transform: scale(.83);}
+}
+
+@-webkit-keyframes img {
+    0% {transform: scale(1);}
+    100% {transform: scale(.83);}
+}
+
+@-moz-keyframes img{
+    0% {transform: scale(1);}
+    100% {transform: scale(.83);}
+}
+@-ms-keyframes img{
+    0% {transform: scale(1);}
+    100% {transform: scale(.83);}
+}
+@-o-keyframes img{
+    0% {transform: scale(1);}
+    100% {transform: scale(.83);}
+}
+
+@keyframes img2 {
+    80% {transform: scale(1.034); opacity: 0;}
+    100% {transform: scale(1); opacity: 1;}
+}
+@-webkit-keyframes img2 {
+    80% {transform: scale(1.034); opacity: 0;}
+    100% {transform: scale(1); opacity: 1;}
+}
+@-moz-keyframes img2{
+    80% {transform: scale(1.034); opacity: 0;}
+    100% {transform: scale(1); opacity: 1;}
+}
+@-ms-keyframes img2{
+    80% {transform: scale(1.034); opacity: 0;}
+    100% {transform: scale(1); opacity: 1;}
+}
+@-o-keyframes img2{
+    80% {transform: scale(1.034); opacity: 0;}
+    100% {transform: scale(1); opacity: 1;}
+}
+
+@keyframes slogan{
+    0%{clip: rect(0px,0px,200px,0px);}
+    10%{clip: rect(0px,183px,200px,0px); opacity: .3;}
+    45%{opacity: 1;}
+    88.5%{clip: rect(0px,183px,200px,0px);}
+    98.5%{clip: rect(0px,183px,200px,183px);}
+}
+@-webkit-keyframes slogan{
+    0%{clip: rect(0px,0px,200px,0px);}
+    10%{clip: rect(0px,183px,200px,0px); opacity: .3;}
+    45%{opacity: 1;}
+    88.5%{clip: rect(0px,183px,200px,0px);}
+    98.5%{clip: rect(0px,183px,200px,183px);}
+}
+@-moz-keyframes slogan{
+    0%{clip: rect(0px,0px,200px,0px);}
+    10%{clip: rect(0px,183px,200px,0px); opacity: .3;}
+    45%{opacity: 1;}
+    88.5%{clip: rect(0px,183px,200px,0px);}
+    98.5%{clip: rect(0px,183px,200px,183px);}
+}
+@-ms-keyframes slogan{
+    0%{clip: rect(0px,0px,200px,0px);}
+    10%{clip: rect(0px,183px,200px,0px); opacity: .3;}
+    45%{opacity: 1;}
+    88.5%{clip: rect(0px,183px,200px,0px);}
+    98.5%{clip: rect(0px,183px,200px,183px);}
+}
+@-o-keyframes slogan{
+    0%{clip: rect(0px,0px,200px,0px);}
+    10%{clip: rect(0px,183px,200px,0px); opacity: .3;}
+    45%{opacity: 1;}
+    88.5%{clip: rect(0px,183px,200px,0px);}
+    98.5%{clip: rect(0px,183px,200px,183px);}
+}
+@keyframes slogan1{
+    0.5%{clip: rect(0px,0px,200px,0px);}
+    10.5%{clip: rect(0px,183px,200px,0px);}
+    89%{clip: rect(0px,183px,200px,0px);}
+    99%{clip: rect(0px,183px,200px,183px);}
+}
+@-webkit-keyframes slogan1{
+    0.5%{clip: rect(0px,0px,200px,0px);}
+    10.5%{clip: rect(0px,183px,200px,0px);}
+    89%{clip: rect(0px,183px,200px,0px);}
+    99%{clip: rect(0px,183px,200px,183px);}
+}
+@-moz-keyframes slogan1{
+    0.5%{clip: rect(0px,0px,200px,0px);}
+    10.5%{clip: rect(0px,183px,200px,0px);}
+    89%{clip: rect(0px,183px,200px,0px);}
+    99%{clip: rect(0px,183px,200px,183px);}
+}
+@-ms-keyframes slogan1{
+    0.5%{clip: rect(0px,0px,200px,0px);}
+    10.5%{clip: rect(0px,183px,200px,0px);}
+    89%{clip: rect(0px,183px,200px,0px);}
+    99%{clip: rect(0px,183px,200px,183px);}
+}
+@-o-keyframes slogan1{
+    0.5%{clip: rect(0px,0px,200px,0px);}
+    10.5%{clip: rect(0px,183px,200px,0px);}
+    89%{clip: rect(0px,183px,200px,0px);}
+    99%{clip: rect(0px,183px,200px,183px);}
+}
+@keyframes slogan2{
+    1%{clip: rect(0px,0px,200px,0px);}
+    11%{clip: rect(0px,183px,200px,0px);}
+    89.5%{clip: rect(0px,183px,200px,0px);}
+    99.5%{clip: rect(0px,183px,200px,183px);}
+}
+@-webkit-keyframes slogan2{
+    1%{clip: rect(0px,0px,200px,0px);}
+    11%{clip: rect(0px,183px,200px,0px);}
+    89.5%{clip: rect(0px,183px,200px,0px);}
+    99.5%{clip: rect(0px,183px,200px,183px);}
+}
+@-moz-keyframes slogan2{
+    1%{clip: rect(0px,0px,200px,0px);}
+    11%{clip: rect(0px,183px,200px,0px);}
+    89.5%{clip: rect(0px,183px,200px,0px);}
+    99.5%{clip: rect(0px,183px,200px,183px);}
+}
+@-ms-keyframes slogan2{
+    1%{clip: rect(0px,0px,200px,0px);}
+    11%{clip: rect(0px,183px,200px,0px);}
+    89.5%{clip: rect(0px,183px,200px,0px);}
+    99.5%{clip: rect(0px,183px,200px,183px);}
+}
+@-o-keyframes slogan2{
+    1%{clip: rect(0px,0px,200px,0px);}
+    11%{clip: rect(0px,183px,200px,0px);}
+    89.5%{clip: rect(0px,183px,200px,0px);}
+    99.5%{clip: rect(0px,183px,200px,183px);}
+}
+@keyframes slogan3{
+    1.5%{clip: rect(0px,0px,200px,0px);}
+    11.5%{clip: rect(0px,183px,200px,0px);}
+    45%{opacity: 1;}
+    90%{clip: rect(0px,183px,200px,0px); opacity: .3;}
+    100%{clip: rect(0px,183px,200px,183px); opacity: .3;}
+}
+@-webkit-keyframes slogan3{
+    1.5%{clip: rect(0px,0px,200px,0px);}
+    11.5%{clip: rect(0px,183px,200px,0px);}
+    45%{opacity: 1;}
+    90%{clip: rect(0px,183px,200px,0px); opacity: .3;}
+    100%{clip: rect(0px,183px,200px,183px);}
+}
+@-moz-keyframes slogan3{
+    1.5%{clip: rect(0px,0px,200px,0px);}
+    11.5%{clip: rect(0px,183px,200px,0px);}
+    45%{opacity: 1;}
+    90%{clip: rect(0px,183px,200px,0px); opacity: .3;}
+    100%{clip: rect(0px,183px,200px,183px);}
+}
+@-ms-keyframes slogan3{
+    1.5%{clip: rect(0px,0px,200px,0px);}
+    11.5%{clip: rect(0px,183px,200px,0px);}
+    45%{opacity: 1;}
+    90%{clip: rect(0px,183px,200px,0px); opacity: .3;}
+    100%{clip: rect(0px,183px,200px,183px);}
+}
+@-o-keyframes slogan3{
+    1.5%{clip: rect(0px,0px,200px,0px);}
+    11.5%{clip: rect(0px,183px,200px,0px);}
+    45%{opacity: 1;}
+    90%{clip: rect(0px,183px,200px,0px); opacity: .3;}
+    100%{clip: rect(0px,183px,200px,183px);}
+}
