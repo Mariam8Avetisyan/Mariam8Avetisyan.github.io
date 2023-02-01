@@ -1,0 +1,460 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+#slide1{
+    -webkit-border: none;
+    -moz-border: none;
+    -ms-border: none;
+    -o-border: none;
+    position: relative;
+	overflow: hidden;
+    width: 300px;
+    height: 250px;
+    background: radial-gradient(200px,#00BEFF,#0096C9) ;
+    animation-name: slide1;
+    -webkit-animation-name: slide1;
+    -moz-animation-name: slide1;
+    -ms-animation-name: slide1;
+    -o-animation-name: slide1;
+}
+#slide2{
+    -webkit-border: none;
+    -moz-border: none;
+    -ms-border: none;
+    -o-border: none;
+    position: absolute;
+	overflow: hidden;
+    width: 300px;
+    height: 250px;
+    background: radial-gradient(200px,#cccccc,#999999) ;
+    animation-name: slide2;
+    -webkit-animation-name: slide2;
+    -moz-animation-name: slide2;
+    -ms-animation-name: slide2;
+    -o-animation-name: slide2;
+}
+#shape {
+    -webkit-border: none;
+    -moz-border: none;
+    -ms-border: none;
+    -o-border: none;
+    position: absolute;
+    overflow: hidden;
+    left: 30px;
+    top: 30px;
+    width: 240px;
+    height: 30px;
+    background-color: white;
+    animation-name: shape;
+    -webkit-animation-name: shape;
+    -moz-animation-name: shape;
+    -ms-animation-name: shape;
+    -o-animation-name: shape;
+    animation-timing-function: cubic-bezier(.29,0,0,1)
+}
+#logo {
+    -webkit-border: none;
+    -moz-border: none;
+    -ms-border: none;
+    -o-border: none;
+    left: 7px;
+    top: 2px;
+    transform: scale(0.7);
+}
+#logomec {
+    -webkit-border: none;
+    -moz-border: none;
+    -ms-border: none;
+    -o-border: none;
+    left: 78px;
+    top: 60px;
+    transform: scale(1);
+}
+#jamer {
+    -webkit-border: none;
+    -moz-border: none;
+    -ms-border: none;
+    -o-border: none;
+    left: 25px;
+    top: 120px;
+    transform: scale(1);
+}
+#smart {
+    -webkit-border: none;
+    -moz-border: none;
+    -ms-border: none;
+    -o-border: none;
+    left: 55px;
+    top: 89px;
+    transform: scale(0);
+    animation-name: smart;
+    -webkit-animation-name: smart;
+    -moz-animation-name: smart;
+    -ms-animation-name: smart;
+    -o-animation-name: smart;
+}
+img {
+    -webkit-border: none;
+    -moz-border: none;
+    -ms-border: none;
+    -o-border: none;
+    position: absolute;     
+}
+#f45 {
+    -webkit-border: none;
+    -moz-border: none;
+    -ms-border: none;
+    -o-border: none;
+     transform-origin: 10px 7px;
+     transform: scale(0.7);
+     left: 35px;
+     top: 1px;
+}
+#img1 {
+    -webkit-border: none;
+    -moz-border: none;
+    -ms-border: none;
+    -o-border: none;
+    left: 330px;
+    top: 65px;
+    transform: scale(0.9);
+    animation-name: img1;
+    -webkit-animation-name: img1;
+    -moz-animation-name: img1;
+    -ms-animation-name: img1;
+    -o-animation-name: img1;
+    
+}
+#img2 {
+    -webkit-border: none;
+    -moz-border: none;
+    -ms-border: none;
+    -o-border: none;
+    left: 330px;
+    top: 65px;
+    transform: scale(0.9);
+    animation-name: img2;
+    -webkit-animation-name: img2;
+    -moz-animation-name: img2;
+    -ms-animation-name: img2;
+    -o-animation-name: img2;
+}
+#fitnes {
+    position: absolute;
+    overflow: hidden;
+    transform-origin: 120px 50px;
+    left: 160px;
+    top: 100px;
+    width: 120px;
+    height: 100px;
+    border-right: 3px solid white;
+    -webkit-border-right: 3px solid white;
+    -moz-border-right: 3px solid white;
+    -ms-border-right: 3px solid white;
+    -o-border-right: 3px solid white;
+    transform: scale(0.9);
+    animation-name: fitnes;
+    -webkit-animation-name: fitnes;
+    -moz-animation-name: fitnes;
+    -ms-animation-name: fitnes;
+    -o-animation-name: fitnes;
+}
+#fitnestext {
+    -webkit-border: none;
+    -moz-border: none;
+    -ms-border: none;
+    -o-border: none;
+    left: 130px;
+    top: 28px;
+    transform: scale(1.2);
+    animation-name: fitnestext;
+    -webkit-animation-name: fitnestext;
+    -moz-animation-name: fitnestext;
+    -ms-animation-name: fitnestext;
+    -o-animation-name: fitnestext;
+}
+.anim{
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(.29,0,0,1);
+}
+
+@keyframes shape{
+    0%{left: 30px; width: 0px;}
+    10%{left: 30px; width: 240px;}
+    7%{transform: scale(1);}
+    15%{transform: scale(1.5);}
+    70%{transform: scale(1.5);}
+    80%{transform: scale(1);}
+    74%{left: 30px; width: 240px;}
+    84%{left: 30px; width: 0px;}
+    100%{left: 30px; width: 0px;}
+}
+@keyframes img1{
+    1%{left: 330px;}
+    11%{left: 70px;}
+    33%{left: 70px;
+    animation-timing-function: cubic-bezier(.5,0,0,.29);}
+    43%{left: -300px;}
+    100%{left: -300px;}
+    
+}
+@keyframes img2{
+    35%{left: 330px;}
+    45%{left: 10px;}
+    75%{left: 10px;
+    animation-timing-function: cubic-bezier(.69,0,1,.66);}
+    85%{left: -190px;}
+    100%{left: -190px;} 
+}
+@keyframes fitnestext{
+    40%{left: 130px;}
+    50%{left: 10px;}
+    72%{left: 10px;
+    animation-timing-function: cubic-bezier(.69,0,1,.66);}
+    78%{left: 130px;
+    }
+}
+@keyframes fitnes{
+    0%{height: 0px; transform: rotate(0deg)}
+    37%{height: 0px; transform: rotate(0deg)}
+    43%{ height: 100px; transform: rotate(360deg)}
+    74%{ height: 100px; transform: rotate(360deg);
+    animation-timing-function: cubic-bezier(.69,0,1,.66);}
+    84%{ height: 0px; transform: rotate(0deg)}
+    100%{ height: 0px; transform: rotate(0deg)}
+}
+@keyframes slide1{
+    78%{width: 300px; }
+    85%{width: 0px; }
+    100%{width: 0px; }
+}
+@keyframes smart{
+    83%{transform: scale(0); }
+    88%{transform: scale(0.9); }
+    100%{transform: scale(0.9); }
+}
+
+@-webkit-keyframes shape{
+    0%{left: 30px; width: 0px;}
+    10%{left: 30px; width: 240px;}
+    7%{transform: scale(1);}
+    15%{transform: scale(1.5);}
+    70%{transform: scale(1.5);}
+    80%{transform: scale(1);}
+    74%{left: 30px; width: 240px;}
+    84%{left: 30px; width: 0px;}
+    100%{left: 30px; width: 0px;}
+}
+@-webkit-keyframes img1{
+    1%{left: 330px;}
+    11%{left: 70px;}
+    33%{left: 70px;
+    animation-timing-function: cubic-bezier(.5,0,0,.29);}
+    43%{left: -300px;}
+    100%{left: -300px;}
+    
+}
+@-webkit-keyframes img2{
+    35%{left: 330px;}
+    45%{left: 10px;}
+    75%{left: 10px;
+    animation-timing-function: cubic-bezier(.69,0,1,.66);}
+    85%{left: -190px;}
+    100%{left: -190px;} 
+}
+@-webkit-keyframes fitnestext{
+    40%{left: 130px;}
+    50%{left: 10px;}
+    72%{left: 10px;
+    animation-timing-function: cubic-bezier(.69,0,1,.66);}
+    78%{left: 130px;
+    }
+}
+@-webkit-keyframes fitnes{
+    0%{height: 0px; transform: rotate(0deg)}
+    37%{height: 0px; transform: rotate(0deg)}
+    43%{ height: 100px; transform: rotate(360deg)}
+    74%{ height: 100px; transform: rotate(360deg);
+    animation-timing-function: cubic-bezier(.69,0,1,.66);}
+    84%{ height: 0px; transform: rotate(0deg)}
+    100%{ height: 0px; transform: rotate(0deg)}
+}
+@-webkit-keyframes slide1{
+    78%{width: 300px; }
+    85%{width: 0px; }
+    100%{width: 0px; }
+}
+@-webkit-keyframes smart{
+    83%{transform: scale(0); }
+    88%{transform: scale(0.9); }
+    100%{transform: scale(0.9); }
+}
+@-moz-keyframes shape{
+    0%{left: 30px; width: 0px;}
+    10%{left: 30px; width: 240px;}
+    7%{transform: scale(1);}
+    15%{transform: scale(1.5);}
+    70%{transform: scale(1.5);}
+    80%{transform: scale(1);}
+    74%{left: 30px; width: 240px;}
+    84%{left: 30px; width: 0px;}
+    100%{left: 30px; width: 0px;}
+}
+@-moz-keyframes img1{
+    1%{left: 330px;}
+    11%{left: 70px;}
+    33%{left: 70px;
+    animation-timing-function: cubic-bezier(.5,0,0,.29);}
+    43%{left: -300px;}
+    100%{left: -300px;}
+    
+}
+@-moz-keyframes img2{
+    35%{left: 330px;}
+    45%{left: 10px;}
+    75%{left: 10px;
+    animation-timing-function: cubic-bezier(.69,0,1,.66);}
+    85%{left: -190px;}
+    100%{left: -190px;} 
+}
+@-moz-keyframes fitnestext{
+    40%{left: 130px;}
+    50%{left: 10px;}
+    72%{left: 10px;
+    animation-timing-function: cubic-bezier(.69,0,1,.66);}
+    78%{left: 130px;
+    }
+}
+@-moz-keyframes fitnes{
+    0%{height: 0px; transform: rotate(0deg)}
+    37%{height: 0px; transform: rotate(0deg)}
+    43%{ height: 100px; transform: rotate(360deg)}
+    74%{ height: 100px; transform: rotate(360deg);
+    animation-timing-function: cubic-bezier(.69,0,1,.66);}
+    84%{ height: 0px; transform: rotate(0deg)}
+    100%{ height: 0px; transform: rotate(0deg)}
+}
+@-moz-keyframes slide1{
+    78%{width: 300px; }
+    85%{width: 0px; }
+    100%{width: 0px; }
+}
+@-moz-keyframes smart{
+    83%{transform: scale(0); }
+    88%{transform: scale(0.9); }
+    100%{transform: scale(0.9); }
+}
+
+@-ms-keyframes shape{
+    0%{left: 30px; width: 0px;}
+    10%{left: 30px; width: 240px;}
+    7%{transform: scale(1);}
+    15%{transform: scale(1.5);}
+    70%{transform: scale(1.5);}
+    80%{transform: scale(1);}
+    74%{left: 30px; width: 240px;}
+    84%{left: 30px; width: 0px;}
+    100%{left: 30px; width: 0px;}
+}
+@-ms-keyframes img1{
+    1%{left: 330px;}
+    11%{left: 70px;}
+    33%{left: 70px;
+    animation-timing-function: cubic-bezier(.5,0,0,.29);}
+    43%{left: -300px;}
+    100%{left: -300px;}
+    
+}
+@-ms-keyframes img2{
+    35%{left: 330px;}
+    45%{left: 10px;}
+    75%{left: 10px;
+    animation-timing-function: cubic-bezier(.69,0,1,.66);}
+    85%{left: -190px;}
+    100%{left: -190px;} 
+}
+@-ms-keyframes fitnestext{
+    40%{left: 130px;}
+    50%{left: 10px;}
+    72%{left: 10px;
+    animation-timing-function: cubic-bezier(.69,0,1,.66);}
+    78%{left: 130px;
+    }
+}
+@-ms-keyframes fitnes{
+    0%{height: 0px; transform: rotate(0deg)}
+    37%{height: 0px; transform: rotate(0deg)}
+    43%{ height: 100px; transform: rotate(360deg)}
+    74%{ height: 100px; transform: rotate(360deg);
+    animation-timing-function: cubic-bezier(.69,0,1,.66);}
+    84%{ height: 0px; transform: rotate(0deg)}
+    100%{ height: 0px; transform: rotate(0deg)}
+}
+@-ms-keyframes slide1{
+    78%{width: 300px; }
+    85%{width: 0px; }
+    100%{width: 0px; }
+}
+@-ms-keyframes smart{
+    83%{transform: scale(0); }
+    88%{transform: scale(0.9); }
+    100%{transform: scale(0.9); }
+}
+
+@-o-keyframes shape{
+    0%{left: 30px; width: 0px;}
+    10%{left: 30px; width: 240px;}
+    7%{transform: scale(1);}
+    15%{transform: scale(1.5);}
+    70%{transform: scale(1.5);}
+    80%{transform: scale(1);}
+    74%{left: 30px; width: 240px;}
+    84%{left: 30px; width: 0px;}
+    100%{left: 30px; width: 0px;}
+}
+@-o-keyframes img1{
+    1%{left: 330px;}
+    11%{left: 70px;}
+    33%{left: 70px;
+    animation-timing-function: cubic-bezier(.5,0,0,.29);}
+    43%{left: -300px;}
+    100%{left: -300px;}
+    
+}
+@-o-keyframes img2{
+    35%{left: 330px;}
+    45%{left: 10px;}
+    75%{left: 10px;
+    animation-timing-function: cubic-bezier(.69,0,1,.66);}
+    85%{left: -190px;}
+    100%{left: -190px;} 
+}
+@-o-keyframes fitnestext{
+    40%{left: 130px;}
+    50%{left: 10px;}
+    72%{left: 10px;
+    animation-timing-function: cubic-bezier(.69,0,1,.66);}
+    78%{left: 130px;
+    }
+}
+@-o-keyframes fitnes{
+    0%{height: 0px; transform: rotate(0deg)}
+    37%{height: 0px; transform: rotate(0deg)}
+    43%{ height: 100px; transform: rotate(360deg)}
+    74%{ height: 100px; transform: rotate(360deg);
+    animation-timing-function: cubic-bezier(.69,0,1,.66);}
+    84%{ height: 0px; transform: rotate(0deg)}
+    100%{ height: 0px; transform: rotate(0deg)}
+}
+@-o-keyframes slide1{
+    78%{width: 300px; }
+    85%{width: 0px; }
+    100%{width: 0px; }
+}
+@-o-keyframes smart{
+    83%{transform: scale(0); }
+    88%{transform: scale(0.9); }
+    100%{transform: scale(0.9); }
+}
